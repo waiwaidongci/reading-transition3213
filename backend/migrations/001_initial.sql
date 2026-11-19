@@ -1,3 +1,6 @@
 -- SQLAlchemy metadata initializes tables idempotently.
 -- Domain tables: reading_collections, reading_sessions, transition_runs, editorial_plans.
+-- Link quota: link_quota_plans (versioned chapter link allocation plans).
 -- Unique natural keys: source.key; (record.source_id, record.reference).
+-- Single active link plan: partial-style unique index on active_key, where only the
+-- effective row stores 'ACTIVE' and all draft/history rows store NULL (NULLs are distinct).

@@ -21,6 +21,7 @@ export const domain = {
   "record_table": "reading_sessions",
   "run_table": "transition_runs",
   "note_table": "editorial_plans",
+  "link_plan_table": "link_quota_plans",
   "eyebrow": "MARGIN NOTES / 43",
   "headline": "读者翻过这一页，接着去了哪里。",
   "subtitle": "杉页数字出版组 · 会话内章节接续研究",

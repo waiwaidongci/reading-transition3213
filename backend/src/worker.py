@@ -4,7 +4,7 @@ from sqlalchemy import select
 from .config.database import Session
 from .config.settings import REDIS_URL,ARTIFACT_DIR
 from .models.run import Run
-from .models import source,record,user,note,audit
+from .models import source,record,user,note,audit,link_plan
 from .services.algorithm import calculate
 from .services.audit import log
 from .services.export import csv_response
